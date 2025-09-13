@@ -1,0 +1,132 @@
+/* Mobile First */
+
+.grid-container {
+  display: grid;
+  */
+  /* For mobile, a single column is used by default */
+
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+
+
+
+
+/* Begin JR Additions */
+
+.grid-text {
+  margin-block-end: 1.85rem;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  padding: .5rem .5rem .85rem .5rem;
+  margin-block-start: 0;
+  margin-block-end: 0rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  border: solid 1px transparent;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+img {
+  /* border: solid 4px black; */
+  box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / .175);
+  margin-block-end: 1.35rem;
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+}
+
+cite,
+.cite {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+
+
+/* End JR Additions */
+
+
+
+
+@media screen and (min-width: 640px) {
+  .grid-container {
+    display: grid;
+    /* Creates two equal-width columns */
+    grid-template-columns: 1fr 1fr;
+    /* Adds a gap between the grid items */
+    grid-template-areas: "areaOne areaTwo";
+    gap: 20px;
+    /* Centers the content vertically within the container */
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .areaOne {
+    grid-area: areaOne;
+  }
+
+  .areaTwo {
+    grid-area: areaTwo;
+  }
+
+  .grid-text {
+    margin-block-end: 0;
+  }
+
+  .grid-image img {
+    /* Ensures the image is responsive and fits its container */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: solid 1px solid;
+    /* box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2) */
+  }
+
+  figure {
+    margin-block-end: 0;
+  }
+
+  figcaption {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  cite,
+  .cite {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-style: italic;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+}
+
+div.last-of-type {
+  margin-block-end: 2.5rem;
+}
+
+
+
+
+/* Define specific widths */
+/* Sets the image column to 300px and the text column to take the remaining space */
+/*
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+*/
