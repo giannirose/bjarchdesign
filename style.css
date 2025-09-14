@@ -252,24 +252,6 @@ p {
 
 }
 
-nav ul li {
-  list-style-type: none;
-  margin-inline-end: 5%;
-  font-size: 2.25rem;
-  text-align: right;
-}
-
-@media screen and (min-width: 768px) {
-  nav ul li {
-    font-size: 2.5rem;
-    margin-inline-end: 18.5%
-  }
-}
-
-nav a {
-  color: #ff0000;
-
-}
 
 .flexbox-container {
   display: flex;
@@ -295,7 +277,7 @@ li {
 .siteplan {
   margin-inline-start: auto;
   margin-inline-end: auto;
-  max-width: 50%;
+  max-width: 65%;
 }
 
 .siteplan img {
